@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comforting Memories of Nazih</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>In Loving Memory of Nazih</h1>
+        <p>Click a button to see a comforting message or memory.</p>
+
+        <div class="button-container">
+            <button onclick="showMessage(0)">Message 1</button>
+            <button onclick="showMessage(1)">Message 2</button>
+            <button onclick="showMessage(2)">Message 3</button>
+        </div>
+
+        <div id="message-display"></div>
+        <img id="nazih-image" src="" alt="Nazih">
+
+        <div class="footer">
+            <p>We will always cherish the love and joy Nazih brought into our lives.</p>
+        </div>
+    </div>
+
+    <script>
+        const messages = [
+            "Nazih will always be with you in spirit, watching over you with love.",
+            "Remember the moments of joy and comfort Nazih brought into your life.",
+            "He may be gone, but the bond you shared will last forever."
+        ];
+
+        const images = [
+            "nazih1.jpg",
+            "nazih2.jpg",
+            "nazih3.jpg"
+        ];
+
+        function showMessage(index) {
+            document.getElementById('message-display').innerText = messages[index];
+            document.getElementById('nazih-image').src = images[index];
+        }
+    </script>
+</body>
+</html>
